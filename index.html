@@ -14,6 +14,7 @@
       --rust: #b7410e;
       --burgundy: #800020;
       --sage-green: #9caf88;
+      --ivory: #f6f1e8; /* Добавляем переменную ivory */
     }
 
     * {
@@ -80,6 +81,16 @@
       margin-bottom: 16px;
     }
 
+    /* Стиль для дополнительного текста в финальной секции */
+    .additional-text {
+      font-size: 15px;
+      line-height: 1.5;
+      margin: 20px auto;
+      max-width: 500px;
+      color: var(--terracotta);
+      opacity: 0.9;
+    }
+
     /* Фоновые изображения для секций */
     .bg-image {
       position: absolute;
@@ -119,6 +130,10 @@
       }
       .cover-text .date {
         font-size: 16px;
+      }
+      .additional-text {
+        font-size: 14px;
+        padding: 0 10px;
       }
     }
 
@@ -363,6 +378,14 @@
     <div class="content-wrapper">
       <div class="text-overlay">
         <h2>Мы вас очень ждём</h2>
+        
+        <!-- Добавленный текст -->
+        <p class="additional-text">
+          Чтобы все прошло идеально и этот день<br>
+          запомнился надолго, пожалуйста,<br>
+          заполните анкету
+        </p>
+        
         <p>С любовью,<br>Данил и Ксения</p>
         <div class="btn-container">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ0AqQO0Z9i--Hd8xtjMx6KA47ejEfQEo6BPGt3OqcQjqGaQ/viewform" 
